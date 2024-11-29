@@ -1,0 +1,208 @@
+:root {
+    --bla: black;
+    --whts: whitesmoke;
+    --pur: rgb(63, 0, 158);
+    --red: red;
+
+}
+
+body {
+    background: var(--bla);
+    margin: 0px;
+    margin-bottom: 45px;
+    width: 100%;
+
+}
+
+
+header {
+    color: var(--whts);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: "Bungee Tint", sans-serif;
+    font-size: 60px;
+    text-align: center;
+    width: 100%;
+
+}
+
+.chama-texto h2 {
+    color: var(--red);
+    font-family: "Princess Sofia", cursive;
+    /*essa fonte é por causa do nome dela, Sofia*/
+    font-size: 100px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    text-align: center;
+
+}
+
+.coracao {
+    margin: center;
+}
+
+
+
+header {
+    transition: filter 0.1s ease-in-out;
+}
+
+header:hover {
+    filter: brightness(400%);
+}
+
+.chama-texto-coracao {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-top: solid rgb(0, 0, 0) 10px;
+    border-bottom: solid rgb(0, 0, 0) 10px;
+    background: rgb(0, 0, 0) linear-gradient(1deg, #3900d5, #00000000);
+    width: 100%;
+}
+
+.chama-coracao img {
+    height: 410px;
+    margin-top: -75px;
+    margin-bottom: -40px;
+
+}
+
+/*@keyframes blink-animation {
+    50% {
+        opacity: 0;
+    }
+}*/
+
+.bate-coracao {
+    position: relative;
+    display: inline-block;
+    /* Para que a imagem e o texto fiquem juntos */
+    animation: blink-animation 1.5s steps(1, end) 0.1s infinite;
+}
+
+.bate-coracao img {
+    width: 100%;
+    /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    display: block;
+    /* Remove espaços indesejados ao redor da imagem */
+    transition: filter 0.3s ease-in-out;
+    /* Transição suave para o efeito de brilho */
+}
+
+/* Efeito de brilho na imagem */
+.bate-coracao:hover img {
+    filter: brightness(1.5) blur(1px);
+    /* Aumenta o brilho e aplica desfoque */
+}
+
+/* Estilo para o texto */
+.bate-coracao .texto {
+    position: absolute;
+    top: 50%;
+    /* Centraliza o texto verticalmente */
+    left: 50%;
+    /* Centraliza o texto horizontalmente */
+    transform: translate(-50%, -50%);
+    /* Ajusta a posição para que o centro da div seja o centro do texto */
+    color: white;
+    font-size: 24px;
+    /* Ajuste o tamanho da fonte conforme necessário */
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    /* Sombras para dar mais destaque ao texto */
+}
+
+/* Animação do "bate-coração" */
+@keyframes blink-animation {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/*.chama-presente h3 {
+    color: var(--vermelho);
+    font-family: "Stylish", serif;
+    font-size: 36px;
+    text-align: center;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+  
+/* width: 100%;  
+
+}
+*/
+.chama-presente h3 {
+    color: var(--whts);
+    /* font-family: "Princess Sofia", cursive; */
+    font-size: 40px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+
+}
+
+.chama-presente h3:hover {
+    color: var(--pur);
+
+}
+
+#container img {
+    height: 350px;
+    border-radius: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+
+}
+
+#container img {
+    opacity: 0.5;
+    border: solid 0px rgb(134, 0, 116);
+}
+
+#container img:hover {
+    opacity: 1;
+    border: solid 5px rgb(134, 0, 116);
+    transition: border 0.13s ease;
+
+}
+
+.caixa-presente {
+    flex-basis: calc(27%);
+    text-align: center;
+    width: 100%;
+
+}
+
+footer {
+    color: rgb(134, 0, 116);
+    text-align: center;
+    font-size: 20px;
+}
+
+footer:hover {
+    color: var(--whts);
+    /*transition: color 1s ease; /* Transição suave */
+    font-size: 25px;
+    margin-top: 10px;
+    transition: 1s;
+}
